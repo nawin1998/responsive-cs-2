@@ -1,0 +1,854 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.header{
+    position: sticky;
+    top: 0;
+    background-color: blue;
+}
+.header .flex{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+}
+.header .flex .logo img{
+    height: 4.5rem;
+    margin-left: 55px;
+}
+.header .flex .navbar a{
+    margin-left: 3rem;
+    font-size: 20px;
+    color: white;
+}
+.navbar a:hover{
+    color: brown;
+}
+/*master section start*/
+.master .Home{
+    min-height: 52rem;
+    background-image: url(images/home-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.master .Home .content{
+    width: 50rem;
+    text-align: center;
+}
+.master .Home .content h1{
+    margin-bottom: 1rem;
+    font-size: 30px;
+    color: black;
+    font-family: cursive;
+}
+.master .Home .content p{
+    width: 45%;
+    margin-bottom: 1rem;
+    margin-left: 26%;
+    padding: 1rem 0;
+    font-size: 20px;
+    color: black;
+    line-height: 2;
+}
+.content .button{
+    border-radius: 10px;
+    color: black;
+    background-color: blueviolet;
+    font-size: large;
+    text-align: center;
+    padding: 14px;
+}
+.button:hover{
+    color: rgb(246, 240, 240);
+}
+
+/*about section start*/
+.About{
+    min-height: 52rem;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.About .eraser .shape{
+    text-align: center;
+}
+.eraser img{
+    height: 30rem;
+    margin-left: 15%;
+}
+.About .shape h1{
+    margin-bottom: 5%;
+    margin-left: 35%;
+    font-size: 30px;
+}
+.About .shape p{
+    width: 50%;
+    margin-left: 35%;
+    margin-top: 2rem;
+    font-size: 20px;
+
+}
+.About .shape button{
+    margin-top: 4rem;
+    margin-left: 52%;
+    border-radius: 14px;
+    padding: 15px;
+    background-color: rgb(240, 122, 183);
+    font-size: 20px;
+}
+button:hover{
+    color: rgb(251, 249, 249);
+}
+/*facility section start*/
+.facility{
+    background-color: transparent;
+    min-height: 37rem;
+}
+.facility .jack{
+    height: 40px;
+    width: 13rem;
+    margin-top: 30px; 
+    margin-left: 42%; 
+    font-size: 25px;
+    line-height: 2;   
+}
+.facility .jack img{
+    height: 100%;
+    width: 100%;
+}
+.tom-container{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 15rem;
+    padding: 3rem 15rem;
+}
+.tom-container .tomb p{
+    width: 15rem;
+}
+.tomb img{
+    margin-left: 40px;
+}
+.tomb .m1{
+    margin-left: 20px;
+}
+/*menu section start*/
+.Menu{
+    background-color: transparent;
+    min-height: 52rem;
+}
+.Menu .domain img{
+    width: 13rem;
+    height: 40px;
+    margin-left: 42%;
+    margin-top: 6rem;
+}
+.Menu .domain h1{
+    height: 30px;
+    width: 200px;
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 42.8%;
+    font-size: 30px;
+}
+.slider{
+    height: 43vh;
+    width: 63%;
+    margin-top: 5%;
+    margin-left: 17%;
+    overflow: hidden;
+}
+.slide{
+    display: flex;
+    height: 100%;
+    width: 126%;
+    animation: 15s slide infinite;
+    transition: linear;
+}
+@keyframes slide{
+    0%{
+        margin-left: 0%;
+    }
+    20%{
+        margin-left: 0%;
+    }
+    40%{
+        margin-left: -102%;
+    }
+    60%{
+        margin-left: -102%;
+    }
+}
+/*gallery section*/
+.Gallery{
+    background-color: transparent;
+    min-height: 52rem;
+}
+.Gallery .hero img{
+    width: 13rem;
+    height: 40px;
+    margin-left: 42%;
+    margin-top: 6rem;
+}
+.Gallery .hero h1{
+    height: 30px;
+    width: 160px;
+    margin-top: 25px;
+    margin-left: 44%;
+    font-size: 30px;
+}
+.photos {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    margin-top: 10rem;
+    margin-left: 8rem;
+    gap: 1rem;
+}
+.photos img{
+    width: 100%;
+    height: 100%;
+}
+
+/*team section start*/
+.Team{
+    background-color: transparent;
+    min-height: 52rem;
+}
+.Team .sunset img{
+    width: 13rem;
+    height: 40px;
+    margin-left: 42%;
+    margin-top: 6rem;
+}
+.Team .sunset h1{
+    height: 30px;
+    width: 140px;
+    margin-top: 25px;
+    margin-left: 44.7%;
+    font-size: 30px; 
+}
+.card{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    margin-top: 8%;  
+}
+.card1{
+    height: 100%;
+    width: 15%;
+    background-color: rgb(38, 110, 174);
+    margin-left: 22px;
+    border-radius: 10px;
+}
+.card1 img{
+    height: 130px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 13px;
+    border-radius: 5px;
+}
+.card1 h1{
+    text-align: center;
+    color: white;
+}
+.card1 p{
+    text-align: center;
+    color: white;
+}
+.card1 button{
+    margin-top: 20px;
+    margin-left: 32%;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+}
+.card1 button:hover{
+    background-color: aquamarine;
+}
+/*contact section */
+.Contact{
+    background-color: transparent;
+    min-height: 52rem;
+}
+.Contact .cat img{
+    width: 13rem;
+    height: 40px;
+    margin-left: 42%;
+    margin-top: 6rem;
+}
+.Contact .cat h1{
+    height: 30px;
+    width: 160px;
+    margin-top: 10px;
+    margin-left: 44.2%;
+    font-size: 30px; 
+}
+.Contact .rows{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.Contact .rows .mike{
+    flex: 1 1 20rem;
+    margin-bottom: 15rem;
+}
+.Contact .rows .mike img{
+    width: 100%;
+}
+.Contact .rows form{
+    flex: 1 1 40rem;
+    padding: 2rem;
+    align-items: center;
+    border: 3px solid black;
+    margin-bottom: 15rem;
+}
+.Contact .rows form h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: black;
+    margin-left: 36%;
+}
+.Contact .rows form .box{
+    width: 100%;
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: black;
+    border: 2px solid black;
+    margin: 1rem 0;
+}
+.Contact .rows form .button{
+    padding: 10px 20px;
+    color: black;
+    margin-left: 43%;
+}
+.Contact .rows form .button:hover{
+    background-color: aquamarine;
+}
+/*icons section start*/
+.icons{
+    background-color: transparent;
+    height: 570px;
+}
+.might{
+    display: flex;
+    width: 70%;
+    gap: 10rem;
+    margin-left: 15%;
+}
+.might .magic{
+    background-color: aquamarine;
+    height: 80px;
+    width: 130px;
+    border-radius: 50%;
+    left: 20px;
+}
+.might .magic .fas1{
+    margin-left: 40px;
+    margin-top: 17px;
+}
+
+.might .magic .fas3{
+    margin-left: 40px;
+    margin-top: 17px;
+}
+
+.might .magic .y1{
+    width: 12rem;
+    margin-top: 30px;
+}
+.might .magic .y5{
+    width: 12rem;
+    margin-top: 20px;
+
+}
+.might .magic .y6{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.might .magic .y7{
+    width: 8rem;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.might .magic .y8{
+    margin-left: 30px;
+}
+.line{
+    border: 5px solid black;
+    width: 80%;
+    margin-top: 20%;
+    margin-left: 10%;
+}
+.mail p{
+    font-size: large;
+    margin-left: 33rem;
+    margin-top: 50px;
+}
+@media only screen and (min-width:320px) and (max-width:480px){
+    .header{
+        width: 100%;
+    }
+    .navbar a{
+        display: grid;
+    }
+    .master .Home{
+        background-position: center;
+        background-size: cover;
+        width: 100%; 
+        height: 10rem; 
+    }
+    .About{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .About .eraser img{
+        height: 20rem;
+        width: 17rem;
+        margin-top: 40%;
+        margin-left: 25px;
+    }
+    .About .shape h1{
+        margin-left: 40px;
+    }
+    .About .shape p{
+        margin-left: 5rem;
+    }
+    .About .shape button{
+        margin-left: 5rem;
+    }
+    .facility.jack{
+        display: grid;
+        flex-direction: column;        
+    }
+    .facility .jack{
+        height: 40px;
+        width: 10rem;
+        margin-top: 30px; 
+        margin-left: 25%; 
+        font-size: 18px;
+        line-height: 2;   
+    }
+    .facility .jack img{
+        height: 100%;
+        width: 100%;
+    }
+    .tom-container{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 5rem;
+        padding: 4rem 7rem;
+        padding-right: 15%;
+    }
+    .tom-container .tomb p{
+        width: 15rem;
+    }
+    
+    .Menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Menu .domain img{
+        margin-left: 30px;
+        margin-top: 80%;
+        height: 3rem;
+        width: 10rem;
+    }
+    .Menu .domain h1{
+        margin-top: 10%;
+        margin-left: 16%;
+        font-size: 25px;
+    }
+    .Menu .slider{
+        overflow: hidden;
+        width: 100%;
+        margin: 0;
+        left: 0;
+      
+    }
+    .Menu .slider .slide .item img{
+        height: 10rem;
+        width: 6.8rem;
+        margin-top: 20%;
+        float: left;
+    }
+    @keyframes slider{
+        0%{
+            left: 0%;
+        }
+        7%{
+            left: 0%;
+        }
+        10%{
+            left: -50%;
+        }
+        15%{
+            left: -50%;
+        }
+        20%{
+            left: -100%;
+        }
+        25%{
+            left: -100%;
+        }
+        
+    }
+    .Gallery{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Gallery .hero img{
+        margin-top: 70%;
+        margin-left: 10px; 
+    }
+    .Gallery .hero h1{
+        margin-left: 35px;
+    }
+    .Gallery .photos{
+        display: grid;
+        flex-wrap: wrap;
+        margin-top: 15%;
+        left: 3%;
+        gap: 1rem;   
+    }
+    .Gallery .photos img{
+        height: 100px;
+        width: 100px;
+    }
+    .Team .sunset img{
+        margin-top: 50%;
+        margin-left: 20%;
+    }
+    .Team .sunset h1{
+        margin-left: 33%;
+    }
+    .Team .card{
+        display: grid;
+        margin-top: 15%;
+    }
+    .Team .card1 img{
+        height: 40px;
+        width: 50px;
+        margin-left: 32%;
+        margin-top: 1%;
+    }
+    .Team .card1{
+        height: 110px;
+        width: 150px;
+        bottom: 10%;
+        margin-top: 10px;
+        margin-left: 30%;
+        gap: 2%;
+    } 
+    .Team .card1 h1{
+        font-size: 10px;
+    }
+    .Team .card1 p{
+        font-size: 5px;
+    }
+    .Team .card1 button{
+        padding: 1px;
+        margin-top: 7%;
+        margin-left: 25%;
+    }
+    .Contact{
+        display: grid;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .Contact .cat img{
+        margin-top: 70%;
+        margin-left: 10%;
+    }
+    .Contact .cat h1{
+        margin-left: 28%;
+    }
+    .Contact .rows form{
+        flex: 1 1 40rem;
+        padding: 2rem;
+        align-items: center;
+        border: 3px solid black;
+        margin-bottom: 15rem;
+    }
+    .Contact .rows form h1{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        color: black;
+        margin-left: 5%;
+    }
+    .Contact .rows form .box{
+        width: 80%;
+        padding: 1.4rem;
+        font-size: 0.5rem;
+        color: black;
+        border: 2px solid black;
+        margin: 1rem 0;
+    }
+    .Contact .rows form .button{
+        padding: 10px 20px;
+        color: black;
+        margin-left: 2%;
+    }
+    .icons .might{
+        display: grid;
+        margin-left: 30%;
+    }
+    .icons .line{
+        margin-top: 40%;
+    }
+    .icons .mail p{
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 13%;
+        font-size: 0.6rem;
+
+    }
+}
+@media only screen and (min-width:770px) and (max-width:1024px){
+    .header .flex .logo img{
+        margin-left: 20px;
+    }
+    .header .flex .navbar a{
+        margin-left: 1rem;
+        font-size: 20px;
+        color: white;
+    }
+    .master .Home .content h1{
+        margin-bottom: 1rem;
+        margin-right: 38%;
+        font-size: 30px;
+        color: black;
+        font-family: cursive;
+    }
+    .master .Home .content p{
+        width: 45%;
+        margin-bottom: 1rem;
+        margin-left: 5%;
+        padding: 1rem 0;
+        font-size: 20px;
+        color: black;
+        line-height: 2;
+    }
+    .content .button{
+        border-radius: 10px;
+        color: black;
+        background-color: blueviolet;
+        font-size: large;
+        text-align: center;
+        padding: 14px;
+        margin-right: 38%;
+    }
+    .About .eraser img{
+        height: 25rem;
+        
+    }
+    .About .shape h1{
+        margin-bottom: 5%;
+        margin-left: 35%;
+        font-size: 30px;
+        width: 50%;
+    }
+    .About .shape p{
+        width: 50%;
+        margin-left: 35%;
+        margin-top: 2rem;
+        font-size: 20px;
+    
+    }
+    .About .shape button{
+        margin-top: 4rem;
+        margin-left: 32%;
+        border-radius: 14px;
+        padding: 15px;
+        background-color: rgb(240, 122, 183);
+        font-size: 20px;
+    }
+    button:hover{
+        color: rgb(251, 249, 249);
+    }
+    .tom-container{
+        display: flex;
+        align-items: center;
+        margin-top: 10rem;
+        padding: 3rem 1rem;
+    }
+    .tomb img{
+        height: 60px;
+        width: 60px;
+    }
+    .tom-container .tomb p{
+        width: 10rem;
+    }
+    .tomb .m1{
+        margin-bottom: 15px;
+        
+    }
+    .slider{
+        height: 43vh;
+        width: 85%;
+        margin-top: 20%;
+        margin-left: 10%;
+        overflow: hidden;
+    }
+    .slide{
+        display: flex;
+        height: 100%;
+        width: 126%;
+        animation: 15s slide infinite;
+        transition: linear;
+    }
+    @keyframes slide{
+        0%{
+            margin-left: 0%;
+        }
+        20%{
+            margin-left: 0%;
+        }
+        40%{
+            margin-left: -102%;
+        }
+        60%{
+            margin-left: -102%;
+        }
+        80%{
+            margin-left: -204%;
+        }
+        100%{
+            margin-left: -204%;
+        }
+    }
+    .photos {  
+        height: 120px;
+        width: 105px;
+        display: flex;
+        
+        margin-top: 20rem;
+        margin-left: 1rem;
+        gap: 1rem;
+    }
+    .photos img{
+        width: 100%;
+        height: 100%;
+    } 
+    .card{
+        height: 300px;
+        width: 100%;
+        display: flex;
+        margin-top: 8%;  
+    }
+    .card1{
+        height: 110%;
+        width: 14%;
+        background-color: rgb(38, 110, 174);
+        margin-top: 10%;
+        margin-left: 18px;
+        border-radius: 10px;
+    }
+    .card1 img{
+        height: 130px;
+        width: 85px;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+    .card1 h1{
+        text-align: center;
+        color: white;
+    }
+    .card1 p{
+        text-align: center;
+        color: white;
+    }
+    .card1 button{
+        margin-top: 20px;
+        margin-left: 2%;
+        padding: 5px 15px;
+        border-radius: 10px;
+        color: black;
+    }
+    .card1 button:hover{
+        background-color: aquamarine;
+    }
+    .might{
+        display: flex;
+        width: 70%;
+        gap: 2rem;
+        margin-left: 10%;
+    }
+    .might .magic{
+        background-color: aquamarine;
+        height: 80px;
+        width: 130px;
+        border-radius: 50%;
+        left: 20px;
+    }
+    .might .magic .fas1{
+        margin-left: 40px;
+        margin-top: 17px;
+    }
+    
+    .might .magic .fas3{
+        margin-left: 40px;
+        margin-top: 17px;
+    }
+    
+    .might .magic .y1{
+        width: 12rem;
+        margin-top: 30px;
+        margin-right: 2%;
+    }
+    .might .magic .y5{
+        width: 12rem;
+        margin-top: 20px;
+    
+    }
+    .might .magic .y6{
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+    .might .magic .y7{
+        width: 8rem;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    .might .magic .y8{
+        margin-left: 30px;
+    }
+    .mail p{
+        font-size: large;
+        margin-left: 1rem;
+        margin-top: 50px;
+    }
+
+
+    
+}    
+    
+
+
+
+
+
+
+    
+
+
+    
+    
+    
+     
+    
+
